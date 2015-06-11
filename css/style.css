@@ -13,7 +13,8 @@ body{
 	color: #444;
 	max-width: 780px;
 	background-color: #FFF;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	margin: 30px 20px 20px 40px;
 	padding: 20px;
 	/*On utilise dans l'ordre, si pas de Helvetica Arial, si pas d'Arial sans-serif ect*/
 }
@@ -34,4 +35,51 @@ a:visited {
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
 	text-transform: uppercase;
+}
+
+/* Element design*/
+
+.main-header {
+	border-bottom: 10px #333 solid;
+	background-color: #eee;
+	padding: 20px;
+}
+
+.portrait{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: auto;
+}
+
+.main-nav a{
+	text-decoration: none;
+	color: blue;
+}
+.main-nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.main-nav li{
+	display: inline-block;
+	background-color: #FFF;
+	padding: 10px;
+}
+
+.main-nav li:hover{
+	background-color: #333;
+}
+
+.main-nav li:before{
+	/*content: "\1F406";*/
+	content: ">";
+	font-size: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.main-nav li:hover:before{
+	color: yellow;
 }
