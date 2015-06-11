@@ -20,28 +20,76 @@
 					<legend>Informations personnelles</legend>
 					<div class="field_line">
 						<label for="">Vous êtes</label>
-						<select name="you">
+						<select name="you" id="you">
 							<option value="Recruteur"></option>
 							<option value="Ami"></option>
 						</select>
 					</div>
 					<div class="field_line">
 						<label for="">Nom</label>
-						<input type="text">
+						<input type="text" id="Nom">
 					</div>
 					<div class="field_line">
 						<label for="">Prénom</label>
-						<input type="text">
+						<input type="text" id="Prenom">
 					</div>
 					<div class="field_line">
 						<label for="">Téléphone</label>
-						<input type="phone">
+						<input type="phone" id="Tel">
 					</div>
 					<div class="field_line">
-						<label for="">Téléphone</label>
-						<textarea name=""></textarea>
+						<label for="">Corps du message</label>
+						<textarea name="" id="Message"></textarea>
+					</div>
+					<div class="field_line">
+						<label for="">Pièce jointe</label>
+						<textarea name="file" id="pj"></textarea>
+					</div>
+					<div class="field_line">
+						<label for="">Couleur préférée</label>
+						<input type="color" id="color">
 					</div>
 			</fieldset>
+			<fieldset>
+				<legend>Informations complémentaires</legend>
+				<div class="field_group">
+						<h3>Sexe</h3>
+						<ul>
+							<li class="field_group_line">
+								<input type="radio" name="sexe" id="sex1">
+								<label for="">Mâle</label>
+						    </li>
+						    <li class="field_group_line">
+								<input type="radio" name="sexe" id="sex2">
+								<label for="">Femelle</label>
+						    </li>
+						    <li class="field_group_line">
+								<input type="radio" name="sexe" id="sex3">
+								<label for="">Autre</label>
+						    </li>
+						</ul>
+						<div class="field_group">
+							<h3>Vous aimez?</h3>
+							<ul>
+								<li class="field_group_line">
+								<input type="checkbox">
+								<label for="">Le chocolat</label>
+						    </li>
+						    <li class="field_group_line">
+								<input type="checkbox">
+								<label for="">Les fraises</label>
+						    </li>
+						    <li class="field_group_line">
+								<input type="checkbox">
+								<label for="">Le thé</label>
+						    </li>
+							</ul>
+						</div>
+				</div>
+			</fieldset>
+			<div class="validation">
+				<input type="button" vlaue="Envoyer ces infos à la NSA. Et la CIA.">
+			</div>
 		</form>	
 	</main>
 </body>
