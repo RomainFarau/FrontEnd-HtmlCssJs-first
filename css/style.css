@@ -1,0 +1,18 @@
+
+.greenSection{
+	border: 5px black solid;
+	border-radius: 25px;
+	color: green;
+}
+
+.blueSection{
+	border: 5px black solid;
+	border-radius: 25px;
+	color: blue;
+}
+
+.redSection{
+	border: 5px black solid;
+	border-radius: 25px;
+	color: red;
+}
