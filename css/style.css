@@ -45,13 +45,21 @@ h1,h2,h3,h4,h5,h6{
 	padding: 20px;
 }
 
+.contact .main-header{
+	background-color: yellow;
+}
+
 .portrait{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 	overflow: auto;
+	transition: all .3s;
 }
 
+.portrait:hover{
+	transform: skew(45deg);
+}
 .main-nav a{
 	text-decoration: none;
 	color: blue;
