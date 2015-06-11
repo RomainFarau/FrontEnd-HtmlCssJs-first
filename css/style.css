@@ -1,18 +1,37 @@
-
-.greenSection{
-	border: 5px black solid;
-	border-radius: 25px;
-	color: green;
+html{
+	background-color: #eee;
+	box-sizing: border-box;
+	/*background-color: rgb(255,120,0);*/
 }
 
-.blueSection{
-	border: 5px black solid;
-	border-radius: 25px;
-	color: blue;
+*, *:before, *:after{
+	box-sizing: inherit;
 }
 
-.redSection{
-	border: 5px black solid;
-	border-radius: 25px;
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #444;
+	max-width: 780px;
+	background-color: #FFF;
+	margin: 0 auto;
+	padding: 20px;
+	/*On utilise dans l'ordre, si pas de Helvetica Arial, si pas d'Arial sans-serif ect*/
+}
+
+a{
+	color: darkred;
+}
+a:focus {
 	color: red;
+}
+a:hover {
+	color: pink;
+}
+a:visited {
+	color: purple;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	text-transform: uppercase;
 }

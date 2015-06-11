@@ -1,0 +1,38 @@
+h1{
+	color: green;
+}
+
+
+.firstSection{
+	color: green;
+}
+
+.presentationSection{
+	color: blue;
+}
+
+.proSection{
+	color: red;
+}
+
+.importantSection{
+	border: 5px black solid;
+	border-radius: 25px;
+}
+
+.firstSection .sectionTitle{
+	color: orange;
+}
+
+.presentationSection .sectionTitle{
+	color: red;
+}
+
+.proSection .sectionTitle{
+	color: orange;
+}
+
+a[href^="http"]{
+	color: red;
+}
+
