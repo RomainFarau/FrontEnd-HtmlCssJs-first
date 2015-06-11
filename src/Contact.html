@@ -15,7 +15,7 @@
 	</header>
 	<main role="main">
 		<h2>Contactez-moi!</h2>
-		<form action="post">
+		<form action="get" target ="#">
 			<fieldset>
 					<legend>Informations personnelles</legend>
 					<div class="field_line">
@@ -27,27 +27,27 @@
 					</div>
 					<div class="field_line">
 						<label for="">Nom</label>
-						<input type="text" id="Nom">
+						<input type="text" id="Nom" name="Nom">
 					</div>
 					<div class="field_line">
 						<label for="">Prénom</label>
-						<input type="text" id="Prenom">
+						<input type="text" id="Prenom" name="Prenom">
 					</div>
 					<div class="field_line">
 						<label for="">Téléphone</label>
-						<input type="phone" id="Tel">
+						<input type="phone" id="Tel" name="Tel">
 					</div>
 					<div class="field_line">
 						<label for="">Corps du message</label>
-						<textarea name="" id="Message"></textarea>
+						<textarea name="" id="Message" name="Message"></textarea>
 					</div>
 					<div class="field_line">
 						<label for="">Pièce jointe</label>
-						<textarea name="file" id="pj"></textarea>
+						<textarea name="file" id="pj" name="pj"></textarea>
 					</div>
 					<div class="field_line">
 						<label for="">Couleur préférée</label>
-						<input type="color" id="color">
+						<input type="color" id="color" name="color">
 					</div>
 			</fieldset>
 			<fieldset>
@@ -88,7 +88,7 @@
 				</div>
 			</fieldset>
 			<div class="validation">
-				<input type="button" vlaue="Envoyer ces infos à la NSA. Et la CIA.">
+				<input type="submit" value="Envoyer ces infos à la NSA. Et la CIA.">
 			</div>
 		</form>	
 	</main>
