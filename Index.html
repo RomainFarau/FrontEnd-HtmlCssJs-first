@@ -8,8 +8,8 @@
 <body>
 	<header class="main-header">
 		<section class="firstSection importantSection">
-			<h1> Farau Romain </h1>
-			<h2 class="sectionTitle"> Développeur </h2>
+			<h1 > Farau Romain </h1>
+			<h2 id="title" class="sectionTitle"> Développeur </h2>
 			<nav class="main-nav">
 				<ul>
 					<li><ahref="Index.html">Accueil du CV</a></li>
@@ -56,6 +56,32 @@
 		</section>
 	</main>
 	<footer>
-	</footer>	
+	</footer>
+	<script type="text/javascript">
+		
+		var element = document.createElement('h1');
+		
+		element.innerHTML = 'Bonjour!';
+		element.style.color = "red";
+		element.style.backgroundColor = "blue";
+		
+		document.body.appendChild(element);
+
+		/*var element2 = document.getElementById("title");
+
+		element2.style.color = "red";
+		element2.style.backgroundColor = "blue";*/
+
+		elements = document.getElementsByClassName("importantSection");
+
+		console.log(elements);
+
+		var el = document.getElementsByTagName("h1")[0];
+		el.addEventListener('click',function(evt){
+
+			el.classList.toggle("sectionTitle");
+			el.style.color="blue";
+		});
+	</script>
 </body>
 </html>
