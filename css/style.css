@@ -8,13 +8,52 @@ html{
 	box-sizing: inherit;
 }
 
+.main-header {
+	border-bottom: 10px #333 solid;
+	background-color: #eee;
+}
+
+.main-nav a{
+	text-decoration: none;
+	color: blue;
+}
+.main-nav ul{
+	list-style-type: none;
+	position: fixed;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.main-nav li{
+	display: inline-block;
+	background-color: #FFF;
+	/*padding: 10px;*/
+}
+
+.main-nav li:hover{
+	background-color: #333;
+}
+
+.main-nav li:before{
+	/*content: "\1F406";*/
+	/*content: ">";*/
+	font-size: 20px;
+	display: inline-block;
+	/*margin-right: 10px;*/
+}
+.main-nav li:hover:before{
+	color: yellow;
+}
+
 body{
 	font-family: Helvetica, Arial, sans-serif;
 	color: #444;
 	max-width: 780px;
 	background-color: #FFF;
 	/*margin: 0 auto;*/
-	margin: 30px 20px 20px 40px;
+	margin: auto;
 	padding: 20px;
 	/*On utilise dans l'ordre, si pas de Helvetica Arial, si pas d'Arial sans-serif ect*/
 }
@@ -39,11 +78,6 @@ h1,h2,h3,h4,h5,h6{
 
 /* Element design*/
 
-.main-header {
-	border-bottom: 10px #333 solid;
-	background-color: #eee;
-	padding: 20px;
-}
 
 .contact .main-header{
 	background-color: yellow;
@@ -60,34 +94,10 @@ h1,h2,h3,h4,h5,h6{
 .portrait:hover{
 	transform: skew(45deg);
 }
-.main-nav a{
-	text-decoration: none;
-	color: blue;
-}
-.main-nav ul{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	text-transform: uppercase;
+
+.main-nav{
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
-.main-nav li{
-	display: inline-block;
-	background-color: #FFF;
-	padding: 10px;
-}
-
-.main-nav li:hover{
-	background-color: #333;
-}
-
-.main-nav li:before{
-	/*content: "\1F406";*/
-	content: ">";
-	font-size: 20px;
-	display: inline-block;
-	margin-right: 10px;
-}
-.main-nav li:hover:before{
-	color: yellow;
-}
